@@ -1,4 +1,4 @@
-package AssertEqualsFloatingPoint;
+package assertEqualsFloatingPoint;
 
 import org.junit.Assert; 
 import org.junit.Test;

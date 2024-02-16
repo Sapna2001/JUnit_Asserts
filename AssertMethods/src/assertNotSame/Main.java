@@ -1,4 +1,4 @@
-package AssertNotSame;
+package assertNotSame;
 
 import org.junit.Assert;
 import org.junit.Test;

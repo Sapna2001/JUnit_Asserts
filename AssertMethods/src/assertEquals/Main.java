@@ -1,4 +1,4 @@
-package AssertEquals;
+package assertEquals;
 
 import org.junit.AfterClass;
 import org.junit.Assert; 

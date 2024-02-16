@@ -1,4 +1,4 @@
-package AssertNull;
+package assertNull;
 
 import org.junit.AfterClass;
 import org.junit.Assert;

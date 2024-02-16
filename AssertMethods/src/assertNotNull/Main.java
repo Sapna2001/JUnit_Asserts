@@ -1,4 +1,4 @@
-package AssertFalse;
+package assertNotNull;
 
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -17,17 +17,21 @@ public class Main {
 	}
 
 	@Test
-	public void assertURL() {
-		driver.get("https://www.lambdatest.com/");
-
-		String actualURL = driver.getCurrentUrl();
-		System.out.println(actualURL);
-
-		String expectedURL = "https://www.google.com/";
-
-		Assert.assertFalse("URL does match", expectedURL.equals(actualURL));
-		System.out.println("Test Passed");
-	}
+    public void assertURL() {
+        driver.get("https://www.lambdatest.com/");
+        
+        String actualURL = driver.getCurrentUrl();
+        System.out.println(actualURL);
+        
+        String expectedURL = null;
+        
+        // Assertion     
+        Assert.assertNotNull("Not Null",actualURL);
+        // OR
+        //Assert.assertNotNull("Null object",expectedURL);
+ 
+        System.out.println("Test Passed");   
+    }
 
 	@AfterClass
 	public static void closeBrowser() {
