@@ -1,9 +1,9 @@
 package assertEquals;
 
 import org.junit.AfterClass;
-import org.junit.Assert; 
 import org.junit.BeforeClass; 
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver; 
 
@@ -21,7 +21,7 @@ public class Main {
         driver.get("https://www.lambdatest.com/");
         String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
-        Assert.assertEquals("https://www.lambdatest.com/", actualURL);
+        Assertions.assertEquals("https://www.lambdatest.com/", actualURL);
         System.out.println("Test Passed");
     }
 

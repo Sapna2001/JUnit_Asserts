@@ -3,6 +3,7 @@ package assertTrue;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,9 +24,9 @@ public class Main {
 		String actualURL = driver.getCurrentUrl();
 		System.out.println("URL : " + actualURL);
 
-		String expectedURL = "https://www.lambdates.com/";
+		String expectedURL = "https://www.lambdatest.com/";
 
-		Assert.assertTrue("URL does not match", expectedURL.equals(actualURL));
+		Assertions.assertTrue( expectedURL.equals(actualURL), "URL does not match");
 		System.out.println("Test Passed");
 	}
 

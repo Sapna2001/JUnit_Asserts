@@ -1,7 +1,7 @@
 package assertEqualsFloatingPoint;
 
-import org.junit.Assert; 
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class Main {
 	@Test
@@ -9,7 +9,7 @@ public class Main {
         double actualDoubleValue= 2.999;
         double expectedDoubleValue = 3.000;
        
-        Assert.assertEquals(expectedDoubleValue, actualDoubleValue, 0.001);
+        Assertions.assertEquals(expectedDoubleValue, actualDoubleValue, 0.001);
        
         System.out.println("Test Passed");            
     }

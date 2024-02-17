@@ -1,7 +1,7 @@
 package assertArrayEquals;
 
-import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class Main {
 	
@@ -12,7 +12,7 @@ public class Main {
         int[] actualArray = {1, 2, 3, 4};
 
         // Assert that the arrays are equal  
-        Assert.assertArrayEquals("Arrays are not equal", expectedArray, actualArray); 
+        Assertions.assertArrayEquals(expectedArray, actualArray, "Arrays are not equal"); 
         System.out.println("Test Passed");   
     }
 }

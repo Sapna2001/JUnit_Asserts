@@ -1,9 +1,9 @@
 package assertNotNull;
 
 import org.junit.AfterClass;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -26,9 +26,9 @@ public class Main {
         String expectedURL = null;
         
         // Assertion     
-        Assert.assertNotNull("Not Null",actualURL);
+        Assertions.assertNotNull(actualURL, "Not Null");
         // OR
-        //Assert.assertNotNull("Null object",expectedURL);
+        // Assertions.assertNotNull(expectedURL, "Not Null");
  
         System.out.println("Test Passed");   
     }

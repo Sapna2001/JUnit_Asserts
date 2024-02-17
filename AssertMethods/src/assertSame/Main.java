@@ -1,7 +1,7 @@
 package assertSame;
 
-import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class Main {
 	
@@ -12,10 +12,10 @@ public class Main {
         String other = "JUnit";
         
         // Assertion
-        // Assert.assertSame("Strings not same", expected, actual);
+        Assertions.assertSame(expected, actual, "Strings not same");
         
         // OR
-        Assert.assertSame("Strings not same", expected, other);
+        // Assertions.assertSame(expected, other, "Strings not same");
         
         System.out.println("Test Passed");   
     }

@@ -1,9 +1,9 @@
 package assertFalse;
 
 import org.junit.AfterClass;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -25,7 +25,7 @@ public class Main {
 
 		String expectedURL = "https://www.google.com/";
 
-		Assert.assertFalse("URL does match", expectedURL.equals(actualURL));
+		Assertions.assertFalse(expectedURL.equals(actualURL), "URL does match");
 		System.out.println("Test Passed");
 	}
 
