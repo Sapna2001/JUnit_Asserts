@@ -19,15 +19,15 @@ public class Main {
 
 	@Test
 	public void assertURL() {
-		driver.get("https://www.lambdatest.com/");
+		driver.get("https://ecommerce-playground.lambdatest.io/");
 
 		String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
-        String expectedURL="https://www.lambdatest.com/";
+        String expectedURL="https://ecommerce-playground.lambdatest.io/";
             
         String actualTitle =  driver.getTitle();
         System.out.println(actualTitle);
-        String expectedTitle = "Next-Generation Mobile Apps and Cross Browser Testing Cloud | LambdaTest";
+        String expectedTitle = "Your Store";
         
         Assertions.assertAll( 
                 () -> Assert.assertEquals(expectedURL, actualURL),
