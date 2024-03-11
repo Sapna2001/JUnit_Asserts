@@ -20,13 +20,13 @@ public class Main {
     @Test
     public void testPageTitleContainsSubstring() {
         // Navigate to the web page
-        driver.get("https://www.lambdatest.com/");
+        driver.get("https://ecommerce-playground.lambdatest.io/");
 
         // Get the title of the web page
         String title = driver.getTitle();
 
         // Verify that the title contains the specified substring using Hamcrest matcher
-        assertThat(title, containsString("LambdaTest"));
+        assertThat(title, containsString("STore"));
         
         System.out.println("Test passed");
     }
