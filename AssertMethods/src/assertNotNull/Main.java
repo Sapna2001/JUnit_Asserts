@@ -18,7 +18,7 @@ public class Main {
 
 	@Test
     public void assertURL() {
-        driver.get("https://www.lambdatest.com/");
+        driver.get("https://ecommerce-playground.lambdatest.io/");
         
         String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
