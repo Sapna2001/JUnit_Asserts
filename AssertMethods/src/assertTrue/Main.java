@@ -19,12 +19,12 @@ public class Main {
 
 	@Test
 	public void assertURL() {
-		driver.get("https://www.lambdatest.com/");
+		driver.get("https://ecommerce-playground.lambdatest.io/");
 
 		String actualURL = driver.getCurrentUrl();
 		System.out.println("URL : " + actualURL);
 
-		String expectedURL = "https://www.lambdatest.com/";
+		String expectedURL = "https://ecommerce-playground.lambdatest.io/";
 
 		Assertions.assertTrue( expectedURL.equals(actualURL), "URL does not match");
 		System.out.println("Test Passed");
